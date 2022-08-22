@@ -10,6 +10,15 @@ namespace Reflection
 {
     internal class Prgrm
     {
+        static void MethodInvestigation(Type T)
+        {
+            Console.WriteLine("Methods");
+            MethodInfo[] methodInfos = T.GetMethods();
+            foreach (MethodInfo methodInfo in methodInfos)
+            {
+                Console.WriteLine(methodInfo.Name);
+            }
+            
         static void FieldInvestigation(Type T)
         {
             Console.WriteLine("Fields");
@@ -19,15 +28,6 @@ namespace Reflection
                 Console.WriteLine(fieldInfo.Name);
             }
         }
-        static void MethodInvestigation(Type T)
-        {
-            Console.WriteLine("Methods");
-            MethodInfo[] methodInfos = T.GetMethods();
-            foreach (MethodInfo methodInfo in methodInfos)
-            {
-                Console.WriteLine(methodInfo.Name);
-            }
-
         }
         static void Main(string[] args)
         {
