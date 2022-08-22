@@ -11,18 +11,17 @@ using System;
         static void Main(string[] args)
         {
             List<string> Employeelist = new List<string>();
-            emp.add("");
-            emp.add("Judith");
-            emp.add("Michonne");
-            emp.add("Mary");
-            emp.add("Lydia");
-            emp.add("Alden");
-            emp.add("Nora");
-            emp.add("Scarlett");
-            emp.add("Enid");
-            emp.add("Carol");
-            Console.WriteLine(Employeelist.Contains("Mary"));
-
+            emp.add("Nikki");
+            emp.add("Swathi");
+            emp.add("Monika");
+            emp.add("Reena");
+            emp.add("Lohita");
+            emp.add("Adhi");
+            emp.add("Nandhini");
+            emp.add("Sree");
+            emp.add("Dinesh");
+            emp.add("Sudarsan");
+            Console.WriteLine(Employeelist.Contains("Reena"));
         }
     }
 }
